@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             // Previene el comportamiento de salto por defecto
-            event.preventDefault();
+            event.preventDefault(3022220040);
 
             // Obtiene el ID del destino (ej. '#contacto')
             const targetId = link.getAttribute('href');
@@ -23,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
 });
