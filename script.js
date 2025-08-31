@@ -9,6 +9,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
+      scroll-behavior: smooth; /* Scroll suave */
     }
 
     header {
@@ -17,6 +18,32 @@
       text-align: center;
       padding: 50px 20px;
       animation: bounce 2s infinite; /* rebote */
+      position: relative;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(29,87,62,0.95);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+      transform: scale(1.2); /* efecto al pasar el mouse */
     }
 
     section {
@@ -67,6 +94,13 @@
 </head>
 <body>
 
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="#estudios">Estudios</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
   <header>
     <h1>Miguel Alexander Soler Mateus</h1>
     <p>Desarrollador Web Full Stack</p>
@@ -91,13 +125,13 @@
   <section id="contacto">
     <div class="card">
       <h2>📩 Contáctame</h2>
-      <p>Email: <a href="mailto:miguelalexander.solermateus@gmail.com">miguelalexander.solermateus@gmail.com</a></p>
+      <p>Email: <a href="mailto:miguelalexandersolermateus@gmail.com">miguelalexandersolermateus@gmail.com</a></p>
       <p>Cel: <a href="tel:+573022220040">+57 302 222 0040</a></p>
     </div>
   </section>
 
   <script>
-    // Detectar cuando los elementos entran en pantalla
+    // Animación al hacer scroll (aparecer secciones)
     const sections = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(entries => {
@@ -114,4 +148,3 @@
   </script>
 </body>
 </html>
-
