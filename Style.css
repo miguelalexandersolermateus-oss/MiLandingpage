@@ -1,10 +1,10 @@
 /* Creación de variables a utilizar */
 :root {
-    --primary-color: #1e90ff; /* Azul brillante */
-    --secondary-color: #0d47a1; /* Azul oscuro elegante */
+    --primary-color: #1e90ff; 
+    --secondary-color: #0d47a1; 
     --text-color: #1c1c1c; 
-    --background-color: #f0f8ff; /* Azul muy claro para fondo */
-    --light-gray: #bbdefb; /* Azul grisáceo claro */
+    --background-color: #f0f8ff; 
+    --light-gray: #bbdefb; 
 }
 
 body {
@@ -271,3 +271,4 @@ body {
         text-align: center;
     }
 }
+
